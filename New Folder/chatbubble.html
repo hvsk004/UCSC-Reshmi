@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Chat Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: auto;
+      /* Enable horizontal scrollbar */
+      margin: 0;
+      /* Remove default margin to prevent horizontal scrollbar */
+    }
+
+    header {
+      text-align: left;
+      background-color: white;
+      color: black;
+      padding: 10px;
+    }
+
+    .gallery-container {
+      display: flex;
+      overflow-x: auto;
+      /* Enable horizontal scrollbar for the gallery */
+    }
+
+    .chat-bubble-container {
+      position: relative;
+      flex-shrink: 0;
+      /* Prevent the chat bubbles from shrinking */
+    }
+
+    .chat-bubble {
+      text-align: center;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      max-width: 300px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+
+    .speech-bubble {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 15px;
+      border-style: solid;
+      border-color: '#ecf0f1';
+      z-index: -1;
+      /* Move the bubble behind the image */
+
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .chat-text {
+      margin: 10px 0;
+    }
+
+    .additional-content {
+      color: #555;
+    }
+
+    p1 {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>What Students Are Saying</h1>
+  </header>
+
+  <div class="gallery-container">
+    <!--s1-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"I made a lot of good connections while I was here.<br>"</p>
+        <p1 class="chat-text">— Aakash Dave
+          International Student
+          Entrepreneur, Founding CEO of Spotmi</p1>
+      </div>
+      <img
+        src="https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/aakash-dave-1x1.2e16d0ba.fill-130x130-c100.jpg"
+        alt="Student Photo 1">
+      <p> Program: Database and Data Analytics<br>
+        Course: Data Analysis, Introduction</p>
+    </div>
+    <!--s2-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"The instructor presented a wide degree of material with great
+          teaching methods. He was available to students beyond the class hours. In-class practice, homework, & the
+          final enabled us to apply accumulated knowledge in C++ throughout the course"</p>
+        <p1 class="chat-text">— Tom T. Hua
+          Embedded Systems Engineer</p1>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3pi17LQ7Uf2j8B9P8YYsN36S6dfFC6CcjqVAy3cHyK8vrC9H3QYiSSfAVmy-1LeI5_0&usqp=CAU"
+        alt="Student Photo 2">
+      <p> Course: C++ Programming</p>
+    </div>
+    <!--s3-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"It’s a very supportive program. The engagement within our class was
+          great. We learned from the professors as well as our classmates."</p>
+        <p1 class="chat-text">— Renuka Adnane, MSOD PHR SHRM-CP
+          International Student
+          Human Resources Business Partner</p1>
+      </div>
+      <img
+        src="https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/adnani-renuka-1x1.2e16d0ba.fill-130x130-c100.jpg"
+        alt="Student Photo 3">
+      <p>Program: Human Resource Management<br>
+        Course: Human Resource Management</p>
+    </div>
+    <!--s4-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"Diana is a compassionate and encouraging instructor, her wealth of
+          knowledge is only exceeded by her obvious love of the work she does and the students and families she
+          supports. Her literacy course stands out as a wonderful learning experience."</p>
+        <p1 class="chat-text">— Lisa M. Barratt
+          Educational Therapist</p1>
+      </div>
+      <img
+        src="https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/barratt-lisa-1x1-headshot.2e16d0ba.fill-130x130-c100.jpg"
+        alt="Student Photo 4">
+      <p> Program: Educational Therapy<br>
+        Instructor: Diana Black Kennedy</p>
+    </div>
+    <!--s5-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"The UCSC Educational Therapy program expanded my knowledge base and
+          gave me the experience necessary to transition from classroom teacher to educational therapist. It has made an
+          enormous impact on my life."</p>
+        <p1 class="chat-text">— Diana Kennedy, B.C.E.T,
+          Educational Therapist
+          Board-Certified Educational Therapist | Instructor</p1>
+      </div>
+      <img
+        src="https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/kennedy-Diana-1x1.2e16d0ba.fill-130x130-c100.png"
+        alt="Student Photo 5">
+      <p> Program: Educational Therapy<br>
+        Course: Educational Therapy Practicum</p>
+    </div>
+    <!--s6-->
+    <div class="chat-bubble-container">
+      <div class="speech-bubble"></div>
+      <div class="chat-bubble">
+        <p class="chat-text" style="color:#87CEEB;">"The response from my fellow students was so enthusiastic that I had
+          to think more in depth. It evolved. Every course demands that you think in a certain way. Every course took me
+          a step further."</p>
+        <p1 class="chat-text">— Bouwien Luppes
+          International Student
+          Art Entrepreneur and Marketer</p1>
+      </div>
+      <img
+        src="https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/bouwien-luppes-1x1.2e16d0ba.fill-130x130-c100.png"
+        alt="Student Photo 6">
+      <p> Programs: Marketing Management & Social Media Marketing<br>
+        Course: Integrated Marketing Communication</p>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
